@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Contador</h1>
+    <p id="contadorTela">0</p>
+    <button onclick="add()">mais</button>
+    <button onclick="decrease()">menos</button>
+    <button onclick="zerar()">zerar</button>
+
+    <script>
+
+        var numero = 1
+
+        function add(){
+            numero = numero + 1
+            showResult()
+        }
+
+        function decrease(){
+            numero = numero -1
+            showResult()
+        }
+
+
+        function showResult(){
+            const p = document.getElementById("contadorTela")
+            p.innerText = numero
+        }
+
+        function zerar(){
+            numeroqualquer = 0
+            const p = document.getElementById("contadorTela")
+            p.innerText = numeroqualquer
+            numero = 0
+        }
+    
+
+    </script>
+
+
+
+</body>
+</html>
